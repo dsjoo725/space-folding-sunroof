@@ -1,7 +1,8 @@
 import { Mail, Phone } from "lucide-react";
 
-import BgImages from "@/shared/ui/bg-images";
+import BgImages from "@/organism/bg-images";
 import { Button } from "@/shared/ui/button";
+import InquiryForm from "@/organism/inquiry-form";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         <p className="text-lg  text-slate-200">
           기능과 감성을 동시에 담은 맞춤형 폴딩도어 시공으로 당신만의 공간을 완성해드립니다.
         </p>
-        <div className="flex flex-col md:flex-row gap-2 mt-8 flex-wrap">
+        <div className="flex flex-col md:flex-row gap-2 mt-12 flex-wrap">
           <Button variant="default" size="lg">
             문의하기
           </Button>
@@ -39,6 +40,18 @@ export default function Home() {
               <Mail className="w-5 h-5" aria-hidden="true" /> zmj6416@naver.com
             </a>
           </Button>
+        </div>
+      </section>
+
+      <section className="bg-slate-100 w-full py-10">
+        <div className="flex flex-col md:flex-row max-w-4xl mx-8 md:mx-auto gap-8">
+          <div className="w-full md:w-1/2">
+            <h2 className="text-2xl md:text-4xl font-bold">문의 하기</h2>
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <InquiryForm />
+          </div>
         </div>
       </section>
     </main>
