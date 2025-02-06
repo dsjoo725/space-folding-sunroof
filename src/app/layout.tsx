@@ -59,6 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko" dir="ltr">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
