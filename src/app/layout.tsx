@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "공간시스템 폴딩&썬루프",
     images: [
       {
-        url: "https://space-folding-sunroof.vercel.app/og-image.jpg",
+        url: "https://space-folding-sunroof.vercel.app/img/vi1.jpg",
         width: 1200,
         height: 630,
         alt: "공간시스템 폴딩&썬루프 대표 이미지",
