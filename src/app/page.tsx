@@ -1,8 +1,9 @@
 import { Mail, Phone } from "lucide-react";
 
-import BgImages from "@/organism/bg-images";
 import { Button } from "@/shared/ui/button";
+import BgImages from "@/organism/bg-images";
 import InquiryForm from "@/organism/inquiry-form";
+import Catalog from "@/organism/catalog";
 
 export default function Home() {
   return (
@@ -18,13 +19,14 @@ export default function Home() {
         />
 
         <h1 className="text-2xl md:text-4xl font-bold  text-slate-50">
-          자체 제작, 납품, 시공, AS 관리까지 <br /> 최고의 품질과 서비스로 고객만족을 드립니다.
+          공간의 만족, 공간에 기쁨, 공간에 의한 행복을 공간 시스템&썬루프에서 찾아보세요.
         </h1>
         <h2 className="text-lg  text-slate-100 mt-4">
-          #일반폴딩도어 #카센터폴딩도어 #단열폴딩도어 #PVC단열폴딩도어 #글라스폴딩도어 #시스템도어
+          #일반폴딩도어 #단열폴딩도어 #목폴딩도어 #글라스폴딩도어 #오픈썬룸 #무빙월 #3연동도어
+          #스라이딩도어
         </h2>
         <p className="text-lg  text-slate-200">
-          기능과 감성을 동시에 담은 맞춤형 폴딩도어 시공으로 당신만의 공간을 완성해드립니다.
+          다양한 공간 연출 및 감성을 담은 맞춤형 시공으로 당신 만의 공간을 만들어들이겠 습니다
         </p>
         <div className="flex flex-col md:flex-row gap-2 mt-12 flex-wrap">
           <Button variant="default" size="lg">
@@ -41,6 +43,10 @@ export default function Home() {
             </a>
           </Button>
         </div>
+      </section>
+
+      <section className="w-full flex flex-col">
+        <Catalog />
       </section>
 
       <section className="bg-slate-100 w-full py-10">
