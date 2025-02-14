@@ -54,7 +54,7 @@ export default function InquiryForm() {
       console.error("문의 제출 오류:", error);
       alert("네트워크 오류로 문의 제출에 실패했습니다.");
     } finally {
-      setIsLoading(true);
+      setIsLoading(false);
     }
   };
 
