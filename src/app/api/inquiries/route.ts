@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "dsjoo25@gamil.com",
+      to: "dsjoo725@gamil.com",
       subject: "📩 공간시스템 폴딩&썬루프 - 신규 문의",
       text: `
         📌 담당자명(회사명): ${name}
