@@ -57,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko" dir="ltr">
       <head>
         <meta name="naver-site-verification" content="ee9f21578133329d81b6d640fbf062f8e885c0eb" />
+        <link rel="canonical" href="https://www.space-folding-sunroof.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no" />
         <script
           type="application/ld+json"
