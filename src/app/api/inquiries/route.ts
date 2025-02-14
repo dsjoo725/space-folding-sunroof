@@ -34,6 +34,9 @@ export async function POST(req: NextRequest) {
     );
   } catch (error) {
     console.error("문의 생성 실패:", error);
-    return NextResponse.json({ message: "문의 생성 또는 이메일 전송 실패" }, { status: 500 });
+    return NextResponse.json(
+      { message: "문의 생성 또는 이메일 전송 실패", error },
+      { status: 500 }
+    );
   }
 }
