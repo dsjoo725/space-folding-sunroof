@@ -1,4 +1,5 @@
 import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/shared/ui/button";
 import BgImages from "@/organism/bg-images";
@@ -29,9 +30,11 @@ export default function Home() {
           다양한 공간 연출과 감성을 담은 맞춤형 시공으로 당신만의 공간을 만들어 드리겠습니다.
         </p>
         <div className="flex flex-col md:flex-row gap-2 mt-12 flex-wrap">
-          <Button variant="default" size="lg">
-            문의하기
-          </Button>
+          <Link href={"/contact"} passHref>
+            <Button variant="default" size="lg">
+              문의하기
+            </Button>
+          </Link>
           <Button aria-label="전화 문의하기" variant="outline" size="lg" asChild>
             <a href="tel:01024079400">
               <Phone className="w-5 h-5" aria-hidden="true" /> 010-24079-400
