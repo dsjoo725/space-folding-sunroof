@@ -7,6 +7,7 @@ import { Form, FormField, FormItem, FormLabel, FormControl, FormMessage } from "
 import { Input } from "@/shared/ui/input";
 import { Textarea } from "@/shared/ui/textarea";
 import { Button } from "@/shared/ui/button";
+import { useState } from "react";
 
 const formSchema = z.object({
   name: z.string().min(2, "담당자명(회사명)을 입력하세요."),
@@ -20,6 +21,8 @@ const formSchema = z.object({
 type InquiryFormData = z.infer<typeof formSchema>;
 
 export default function InquiryForm() {
+  const [isLoading, setIsLoading] = useState(false);
+
   const form = useForm<InquiryFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -33,6 +36,7 @@ export default function InquiryForm() {
   });
 
   const onSubmit = async (data: InquiryFormData) => {
+    setIsLoading(true);
     try {
       const response = await fetch("/api/inquiries", {
         method: "POST",
@@ -49,6 +53,8 @@ export default function InquiryForm() {
     } catch (error) {
       console.error("문의 제출 오류:", error);
       alert("네트워크 오류로 문의 제출에 실패했습니다.");
+    } finally {
+      setIsLoading(true);
     }
   };
 
@@ -189,8 +195,8 @@ export default function InquiryForm() {
         />
 
         {/* 제출 버튼 */}
-        <Button size="lg" className="w-full">
-          문의 보내기
+        <Button size="lg" className="w-full" disabled={isLoading}>
+          {isLoading ? "문의 전송중" : "문의 보내기"}
         </Button>
       </form>
     </Form>
