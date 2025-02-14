@@ -30,8 +30,8 @@ export default function Home() {
           다양한 공간 연출과 감성을 담은 맞춤형 시공으로 당신만의 공간을 만들어 드리겠습니다.
         </p>
         <div className="flex flex-col md:flex-row gap-2 mt-12 flex-wrap">
-          <Link href={"/contact"} passHref>
-            <Button variant="default" size="lg">
+          <Link className="w-full md:w-fit" href={"/contact"} passHref>
+            <Button className="w-full" variant="default" size="lg">
               문의하기
             </Button>
           </Link>
