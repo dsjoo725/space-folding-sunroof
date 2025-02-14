@@ -32,9 +32,24 @@ export default function InquiryForm() {
     },
   });
 
-  const onSubmit = (data: InquiryFormData) => {
-    console.log("문의 폼 데이터:", data);
-    alert("문의가 성공적으로 제출되었습니다.");
+  const onSubmit = async (data: InquiryFormData) => {
+    try {
+      const response = await fetch("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("문의가 성공적으로 제출되었습니다.");
+        form.reset();
+      } else {
+        alert("문의 제출에 실패했습니다. 다시 시도해 주세요.");
+      }
+    } catch (error) {
+      console.error("문의 제출 오류:", error);
+      alert("네트워크 오류로 문의 제출에 실패했습니다.");
+    }
   };
 
   return (

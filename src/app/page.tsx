@@ -19,14 +19,14 @@ export default function Home() {
         />
 
         <h1 className="text-2xl md:text-4xl font-bold  text-slate-50">
-          공간의 만족, 공간에 기쁨, 공간에 의한 행복을 공간 시스템&썬루프에서 찾아보세요.
+          공간의 만족, 공간의 기쁨, 공간이 주는 행복을 공간시스템 폴딩&썬루프에서 찾아보세요.
         </h1>
         <h2 className="text-lg  text-slate-100 mt-4">
           #일반폴딩도어 #단열폴딩도어 #목폴딩도어 #글라스폴딩도어 #오픈썬룸 #무빙월 #3연동도어
-          #스라이딩도어
+          #슬라이딩도어
         </h2>
         <p className="text-lg  text-slate-200">
-          다양한 공간 연출 및 감성을 담은 맞춤형 시공으로 당신 만의 공간을 만들어들이겠 습니다
+          다양한 공간 연출과 감성을 담은 맞춤형 시공으로 당신만의 공간을 만들어 드리겠습니다.
         </p>
         <div className="flex flex-col md:flex-row gap-2 mt-12 flex-wrap">
           <Button variant="default" size="lg">
