@@ -37,7 +37,7 @@ export default function Home() {
           </Link>
           <Button aria-label="전화 문의하기" variant="outline" size="lg" asChild>
             <a href="tel:01024079400">
-              <Phone className="w-5 h-5" aria-hidden="true" /> 010-24079-400
+              <Phone className="w-5 h-5" aria-hidden="true" /> 010-2407-9400
             </a>
           </Button>
           <Button aria-label="이메일 문의하기" variant="outline" size="lg" asChild>
