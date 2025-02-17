@@ -14,15 +14,15 @@ export function Header() {
       </Link>
 
       <nav className="ml-auto hidden md:flex items-center space-x-4">
-        <Link href={"/about"} passHref>
+        {/* <Link href={"/about"} passHref>
           <Button variant="ghost">회사 소개</Button>
-        </Link>
+        </Link> */}
         <Link href={"/catalog"} passHref>
           <Button variant="ghost">제품 소개</Button>
         </Link>
-        <Link href={"/cases"} passHref>
+        {/* <Link href={"/cases"} passHref>
           <Button variant="ghost">시공사례</Button>
-        </Link>
+        </Link> */}
         <Link href={"/contact"} passHref>
           <Button variant="ghost">견적 요청</Button>
         </Link>
