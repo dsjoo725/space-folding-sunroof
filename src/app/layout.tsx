@@ -10,19 +10,21 @@ import { Header } from "@/shared/ui/header";
 const notoSansKr = Noto_Sans_KR({
   variable: "--font-noto-sans-kr",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"], // 사용할 폰트 두께 선택
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "공간시스템 폴딩&썬루프 | 폴딩도어 & 썬루프 전문 시공",
-  description: "자체 제작부터 시공, AS까지! 최고의 품질과 서비스로 고객 만족을 드립니다.",
+  title: "공간 활용을 극대화하는 폴딩도어 & 썬루프 - 공간시스템 폴딩&썬루프",
+  description:
+    "더 넓은 공간을 원한다면? 최신 폴딩도어 및 썬루프 시스템을 도입하세요. 혁신적인 디자인과 효율적인 설치로, 모든 공간을 스마트하게 활용할 수 있습니다.",
   keywords: "폴딩도어, 단열폴딩도어, 시스템도어, 공간시스템, 썬루프",
   authors: [{ name: "공간시스템 폴딩&썬루프", url: "https://www.space-folding-sunroof.com" }],
   openGraph: {
     type: "website",
     url: "https://www.space-folding-sunroof.com",
-    title: "공간시스템 폴딩&썬루프 | 폴딩도어 & 썬루프 전문 시공",
-    description: "자체 제작부터 시공, AS까지! 최고의 품질과 서비스로 고객 만족을 드립니다.",
+    title: "공간 활용을 극대화하는 폴딩도어 & 썬루프 - 공간시스템 폴딩&썬루프",
+    description:
+      "더 넓은 공간을 원한다면? 최신 폴딩도어 및 썬루프 시스템을 도입하세요. 혁신적인 디자인과 효율적인 설치로, 모든 공간을 스마트하게 활용할 수 있습니다.",
     siteName: "공간시스템 폴딩&썬루프",
     images: [
       {
