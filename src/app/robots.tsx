@@ -1,4 +1,4 @@
-export const robots = () => {
+export default function robots() {
   return {
     rules: [
       {
@@ -9,4 +9,4 @@ export const robots = () => {
     sitemap: "https://www.space-folding-sunroof.com/sitemap.xml",
     host: "https://www.space-folding-sunroof.com",
   };
-};
+}
