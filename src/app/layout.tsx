@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL("https://www.space-folding-sunroof.com"),
+  icons: {
+    icon: [{ url: "/favicon.ico" }, { url: "/icon.png", type: "image/png" }],
+  },
 };
 
 const jsonLd = {
