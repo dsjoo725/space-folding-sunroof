@@ -14,17 +14,16 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "다양한 공간 연출과 감성을 담은 폴딩도어, 썬루프 - 공간시스템 폴딩&썬루프",
-  description:
-    "더 넓은 공간을 원한다면? 최신 폴딩도어 및 썬루프 시스템을 도입하세요. 혁신적인 디자인과 효율적인 설치로, 모든 공간을 스마트하게 활용할 수 있습니다.",
+  title: "맞춤형 폴딩도어, 썬루프 시공 - 공간시스템 폴딩&썬루프",
+  description: "최신 기술과 감각적 디자인으로 단열·목·글라스 폴딩도어, 오픈썬룸, 썬루프 시공 제공.",
   keywords: "폴딩도어, 단열폴딩도어, 시스템도어, 공간시스템, 썬루프",
   authors: [{ name: "공간시스템 폴딩&썬루프", url: "https://www.space-folding-sunroof.com" }],
   openGraph: {
     type: "website",
     url: "https://www.space-folding-sunroof.com",
-    title: "다양한 공간 연출과 감성을 담은 폴딩도어, 썬루프 - 공간시스템 폴딩&썬루프",
+    title: "맞춤형 폴딩도어, 썬루프 시공 - 공간시스템 폴딩&썬루프",
     description:
-      "더 넓은 공간을 원한다면? 최신 폴딩도어 및 썬루프 시스템을 도입하세요. 혁신적인 디자인과 효율적인 설치로, 모든 공간을 스마트하게 활용할 수 있습니다.",
+      "최신 기술과 감각적 디자인으로 단열·목·글라스 폴딩도어, 오픈썬룸, 썬루프 시공 제공.",
     siteName: "공간시스템 폴딩&썬루프",
     images: [
       {
