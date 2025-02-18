@@ -43,7 +43,7 @@ const jsonLd = {
   "@type": "Organization",
   name: "공간시스템 폴딩&썬루프",
   url: "https://www.space-folding-sunroof.com",
-  logo: "https://www.space-folding-sunroof.com/icon.png",
+  logo: "https://www.space-folding-sunroof.com/logo.png",
   contactPoint: [
     {
       "@type": "ContactPoint",
